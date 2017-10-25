@@ -61,6 +61,8 @@ namespace ConvertWithOffice
                     Console.Error.WriteLine(e.Message);
                 }
             }
+            ppt?.Quit();
+            wrd?.Quit();
         }
 
         private static string getPDFName (string file)
